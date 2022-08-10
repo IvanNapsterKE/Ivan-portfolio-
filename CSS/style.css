@@ -82,6 +82,18 @@ ul{
     margin-right: -15px;
     position: relative;
 }
+.btn-hire{
+
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
 .aside{
 
     width: 270px;
@@ -229,11 +241,35 @@ padding: 5px 15px;
     
   
 }
+h3 .hello{
+    font-size: 28px;
+    margin: 15px 0;
+}
 
 h3.hello span{
 
-    font-family:'Oleo Script Swash Caps', cursive;;
+    font-family:'Oleo Script Swash Caps', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);   
 }
+
+h3 .proffesion{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing{
+    color: var(--text-black-700);
+}
+
+.home-info p{
+
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+ 
 .home .home-img{
 
     flex: 0 0 40%;
