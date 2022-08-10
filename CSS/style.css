@@ -9,11 +9,12 @@ font-family: 'Poppins', sans-serif; */
 :root{
 
 
-    --bg-black-900:#f2f2fc;
+    --bg-black-900:#ebeae5;
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
 --text-black-900:#FFCC00;
 --text-black-700:#FFFF66;
+--test-900:#4b4b4b;
 
     
 }
@@ -24,7 +25,9 @@ body{
     padding:0 ;
     line-height:1.5 ;
     font-size: 16px;
-    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    position: relative;
+    
 }
 
 *{
@@ -34,6 +37,7 @@ body{
     text-decoration: none;
     box-sizing: border-box;
 }
+
 
 ::before, ::after {
 
@@ -46,43 +50,69 @@ ul{
 }
 .section{
 
-    background: var(--bg-black-900);
+    background: var(--test-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
+    position:fixed;
+    padding: 0, 30px;
     top: 0;
-    left: 270PX;
+    left: 300PX;
     right: 0;
     z-index: 0;
     opacity: 1;
 
 }
+
+.padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container{
+
+    max-width: 1100px;
+    width: 100%;
+    background: green;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
 .aside{
 
-width: 270px;
-background: var(--bg-black-100);
-position: fixed;
-left: 0;
-top: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 30px;
-height:100% ;
-z-index: 10;
+    width: 270px;
+    background: var(--test-900);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--text-black-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height:100% ;
+    z-index: 10;
 
 }
 
 .aside .logo img{
 
-    /* position: absolute;
-    
-    top: 50px; */
-
+    position:absolute;
+    /* text-align: center; */
+    top: 150px;
+    /* left:40px; */
     background: red;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
-/* .aside .logo img::before {
+.aside .logo img::before {
 
     content: '';
     position: absolute ;
@@ -92,5 +122,129 @@ z-index: 10;
     border: 0;
     left: 0;
 
-} */
+}
+.aside .logo img::after {
 
+    content: '';
+    position: absolute ;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color) ;
+    border: 0;
+    left: 0;
+
+}
+
+
+.aside .nav-ham{
+
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .nav-toggle span{
+
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+    
+}
+.aside .nav-toggle span::before{
+
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute; 
+    top: -6px;
+    left: 0;
+
+}
+.aside .nav-toggle span::after{
+
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute; 
+    top: 6px;
+    left: 0;
+
+}
+
+.aside .nav{
+
+    margin-top: 50px;
+    background: grey;
+
+}
+
+.aside .nav li{
+
+    margin-bottom: 20px;
+    display: block;
+
+
+}
+
+.aside .nav li a
+{
+font-size: 20px;
+font-weight: 600;
+display: block;
+border-bottom: 1px solid var(--bg-black-50);
+color: var(--text-black-900);
+padding: 5px 15px;
+
+}
+
+.aside .nav li a.active{
+    color: var(--skin-color);
+}
+.aside .nav li a i {
+    margin-right:15px;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+}
+
+.home .home-info{
+
+    flex: 0 0 60%;
+    max-width: 60%;
+    
+  
+}
+
+h3.hello span{
+
+    font-family:'Oleo Script Swash Caps', cursive;;
+}
+.home .home-img{
+
+    flex: 0 0 40%;
+    max-width: 40%;
+    background: red;
+    text-align: center;
+    position: relative;
+}
+
+
+.home .home-img img{
+    height: 400px;
+   
+}
